@@ -21,7 +21,7 @@ root@raspberrypi:~#
 
 # Install the required libraries in the system
 
-Before starting the build please make sure you have installed the following libraries (make sure yo uare loggedin as root otherwise you will have to use sudo infornt of each of the commands):
+Before starting the build please make sure you have installed the following libraries (make sure you are loggedin as root otherwise you will have to use sudo infront of each of the commands):
 
 ```shell
 root@raspberrypi:~#  apt update
