@@ -1,6 +1,8 @@
 # How to build the cpuminer-multi for a Raspberry Pi machine with ARMv7 architecture
 In the following notes we assume that you want to build the cpuminer-multi software for a Raspberry Pi with ARMv7 architecture.
 
+Basically, ARMv7 and below are 32-bit while ARMv8 introduces the 64-bit instruction set. The latest version of Raspberry Pi 4 comes with an ARMv8 64-bit instruction set.
+
 We will use the repository maintained by tpruvot since it is the most active one in comparison to the original repository of lucasjones.
 
 # Check your machine
