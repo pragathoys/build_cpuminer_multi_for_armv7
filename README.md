@@ -1,5 +1,5 @@
 # How to build the cpuminer-multi for a Raspberry Pi machine with ARMv7 architecture
-In the following notes we assume that you want to build the cpuminer-multi software for a Raspberry Pi with ARMv7 architecture in other words for a RPi2 machine.
+In the following notes we assume that you want to build the cpuminer-multi software for a Raspberry Pi with ARMv7 architecture.
 
 We will use the repository maintained by tpruvot since it is the most active one in comparison to the original repository of lucasjones.
 
