@@ -7,47 +7,59 @@ We will use the repository maintained by truvot since it is the most active one 
 
 Just to make sure you have an armv7 RPi you can run the following command in a shell promts:
 
+```shell
 $ uname -a
+```
 
 You should a response like this:
 
+```shell
 root@raspberrypi:~# uname -m
 armv7l
 root@raspberrypi:~# 
+```
 
 # install the required libraries in the system
 
 Before starting the build please make sure you have installed the following libraries (make sure yo uare loggedin as root otherwise you will have to use sudo infornt of each of the commands):
 
+```shell
 root@raspberrypi:~#  apt update
 root@raspberrypi:~#  apt-get install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev zlib1g-dev make g++
-
+```
 
 # Clone the GitHub repository of the software
 We will use the repository maintained by truvot:
 
+```shell
 root@raspberrypi:~# git clone https://github.com/tpruvot/cpuminer-multi -b linux
-
+```
 
 # Prepare and build
+```shell
 root@raspberrypi:~# cd cpuminer-multi
 
 
 root@raspberrypi:~/cpuminer-multi# ./autogen.sh
 root@raspberrypi:~/cpuminer-multi# ./configure --with-crypto --with-curl --disable-assembly CC=gcc CXX=g++ CFLAGS="-fPIC -Ofast -fuse-linker-plugin -ftree-loop-if-convert-stores -march=armv7" LDFLAGS="-march=native"
-
+```
 and if no errors appear you are ready to go:
 
+```shell
 root@raspberrypi:~/cpuminer-multi# make
+```
 
 # Check miner
 
 If everything gone well when you run the command :
 
+```shell
 root@raspberrypi:~/cpuminer-multi# ./cpuminer --help 
+```
 
 You should get a similar screen like this:
 
+```shell
 ** cpuminer-multi 1.3.7 by tpruvot@github **
 BTC donation address: 1FhDPLPpw18X4srecguG3MxJYe4a1JsZnd (tpruvot)
 
@@ -162,14 +174,17 @@ Options:
   -c, --config=FILE     load a JSON-format configuration file
   -V, --version         display version information and exit
   -h, --help            display this help text and exit
+```
 
 #  start mining!
 
 You are ready to use your favorite mining pool (eg multipool.us) and start mining
 
+```shell
 root@raspberrypi:~/cpuminer-multi#  ./cpuminer -a scrypt -o stratum+tcp://us.multipool.us:3334 -u <worker_name>  -p 12345
 
 root@raspberrypi:~/cpuminer-multi# ./cpuminer -a sha256 -o stratum+tcp://us.multipool.us:3332 -u <worker_name>  -p 12345
+```
 
 # Resources
 
