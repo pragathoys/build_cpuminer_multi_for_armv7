@@ -13,7 +13,7 @@ Just to make sure you have an armv7 RPi you can run the following command in a s
 $ uname -m
 ```
 
-You should a response like this:
+You should get a response like this:
 
 ```shell
 root@raspberrypi:~# uname -m
