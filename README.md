@@ -19,7 +19,7 @@ armv7l
 root@raspberrypi:~# 
 ```
 
-# install the required libraries in the system
+# Install the required libraries in the system
 
 Before starting the build please make sure you have installed the following libraries (make sure yo uare loggedin as root otherwise you will have to use sudo infornt of each of the commands):
 
@@ -176,7 +176,7 @@ Options:
   -h, --help            display this help text and exit
 ```
 
-#  start mining!
+#  Start mining!
 
 You are ready to use your favorite mining pool (eg multipool.us) and start mining
 
