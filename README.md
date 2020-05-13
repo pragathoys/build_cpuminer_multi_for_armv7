@@ -1,7 +1,7 @@
 # How to build the cpuminer-multi for a Raspberry Pi machine with ARMv7 architecture
 In the following notes we assume that you want to build the cpuminer-multi software for a Raspberry Pi with ARMv7 architecture in other words for a RPi2 machine.
 
-We will use the repository maintained by truvot since it is the most active one in comparison to the original repository of lucasjones.
+We will use the repository maintained by tpruvot since it is the most active one in comparison to the original repository of lucasjones.
 
 # Check your machine
 
@@ -29,7 +29,7 @@ root@raspberrypi:~#  apt-get install automake autoconf pkg-config libcurl4-opens
 ```
 
 # Clone the GitHub repository of the software
-We will use the repository maintained by truvot:
+We will use the repository maintained by tpruvot:
 
 ```shell
 root@raspberrypi:~# git clone https://github.com/tpruvot/cpuminer-multi -b linux
