@@ -8,7 +8,7 @@ We will use the repository maintained by tpruvot since it is the most active one
 Just to make sure you have an armv7 RPi you can run the following command in a shell promts:
 
 ```shell
-$ uname -a
+$ uname -m
 ```
 
 You should a response like this:
@@ -189,6 +189,7 @@ root@raspberrypi:~/cpuminer-multi# ./cpuminer -a sha256 -o stratum+tcp://us.mult
 # Resources
 
 * Most usefull resource is the repository of the cpuminer-multi:  https://github.com/tpruvot/cpuminer-multi
+* Original repo: https://github.com/lucasjones/cpuminer-multi
 
 * You can find more details about the parameter 'march' and the AArch64-Options : https://gcc.gnu.org/onlinedocs/gcc-6.1.0/gcc/AArch64-Options.html
 
